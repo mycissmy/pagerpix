@@ -1,0 +1,41 @@
+Hello devs,, This is Vasu Birla (Kilvish) ...To use this Pix Payment method of Brazil follow these steps 
+
+1. There is a file kilPay.php which is not provided by API,, we have to manually code it, 
+	however you dont need to make it just Edit kilPay.php and put your test API key 
+
+2. As well put your Varilables which are being used in your project 
+	for example $amount $useremail $item etc. 
+
+3. after doing this you need to make composer.json file (which is already made by me for my projet) 
+	you have to just edit it for your vender 
+
+4. after this we have have to generate autoload using composer . but here composer.lock file already exist  
+
+	just open your cmd or server Terminal and run following commands - 
+
+		composer dump-autoload
+		composer install
+		composer update
+
+
+	it will create following arch inside your pix sdk folder 
+
+/your sdk folder inside your project
+├── composer.json
+├── vendor
+│   └── ... Composer's generated files and directories ...
+├── ... other project files and directories ...  
+
+
+
+------------ done .. now open kilPay.php it will create QR code with your request Item, amount and Use ... 
+
+----------------------- If You have Doubt You can contact me on LinkdIn https://in.linkedin.com/in/vasubirla  ........   
+
+Note -  Generating a QR code is just one part of the PIX payment process. To complete a PIX payment, 
+you need to provide this QR code to your customers, and they will use a PIX-compatible mobile app to scan it and initiate the payment.
+
+Testing PIX payments when you're in India is very challenging, as PIX is primarily used in Brazil.
+ However, You can Contact a Brazilian Partner or Developer: If you have a Brazilian business partner or
+ know someone in Brazil who can assist, you can collaborate with them to perform testing.
+

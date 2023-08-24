@@ -1,0 +1,33 @@
+{
+    "name": "yourvendorname/nowaste",
+    "description": "Your project description",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vasu Birla",
+            "email": "vasubirla@gmail.com"
+        }
+    ],
+    "require": {
+        "endroid/qr-code": "^3.0",
+        "php-http/curl-client": "^2.0",
+        "nyholm/psr7": "^1.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kilvish\\": "vendor/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
